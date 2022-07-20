@@ -1,0 +1,39 @@
+#productstopnav{
+    border: 1px solid red;
+    height: 42px;
+
+}
+#productsmain{
+    border: 2px solid green;
+    display: flex;
+}
+#produtssidebarmain{
+    border: 1px solid blue;
+    width: 275px;
+    height: 1500px;
+}
+#productsbannercontmain{
+    width: 1167px;
+    height: 1500px;
+    border: 1px solid teal;
+    margin-left: 52px;
+}
+.produtsmainbanner img{
+    height: 233px;
+    width: 1167px;
+}
+#productsSortnav{
+    border: 1px solid grey;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#productssortButtons{
+    display: flex;
+    gap: 20px;
+    margin-right: 10px;
+    
+    
+
+}
