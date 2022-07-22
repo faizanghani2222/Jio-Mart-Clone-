@@ -18,7 +18,7 @@ let userdata= JSON.parse(localStorage.getItem("user")) || []
                 this.password=password
                 this.name = name
 
-                alert("user registered succesfully")
+                alert("User registered succesfully")
                 document.querySelector("#signup-div").style.display="none";
                 document.querySelector("#login-div").style.display="block";
                 userdata.push(this)
@@ -28,7 +28,7 @@ let userdata= JSON.parse(localStorage.getItem("user")) || []
                
             }
             else{
-                alert("Email already registered go to login page")
+                alert("This email is already registered with us go to login page")
                 document.querySelector("#signup-div").style.display="none";
                 document.querySelector("#login-div").style.display="block";
             }
@@ -91,7 +91,7 @@ let userdata= JSON.parse(localStorage.getItem("user")) || []
             // window.location.href=""
             }
             else{
-                alert("This email does not registered go to sign-up page")
+                alert("This email does not registered with us kindly go to sign-up page")
                 document.querySelector("#login-div").style.display="none";
                 document.querySelector("#signup-div").style.display="block";
 
