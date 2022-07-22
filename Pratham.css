@@ -7,19 +7,31 @@
     margin-left: 3%;
     font-weight: bolder;
     padding: 8px 16px 16px 4px;
-    font-size: 25px;
-    color: rgb(4, 4, 4);
+    font-size: 200%;
+    color: rgb(28, 25, 25);
     font-family: 'Lato', sans-serif;
      font-family: 'Varela Round', sans-serif;
-     margin-bottom: 5px; 
+     margin-bottom: -1.1%; 
+     margin-top: 1%; 
 }
 .slideshow-container {
     width: 100%;
     position: relative;
     margin: auto;
-    height: 370px;
+    height: 45%;
 
 }
+/* @media all and (min-width: 451px) and (max-width:750px){
+    .slideshow-container {
+        width: 10%;
+        position: relative;
+        margin: auto;
+        height: 0%;
+    }
+     */
+    
+    
+/* } */
 .slideshow-container img {
     width: 100%;
     height: 100%;
@@ -45,7 +57,7 @@
     width: auto;
     margin-top: -22px;
     padding: 10px;
-    color: #222428;
+    color: #6c6766;
     /*font-weight:1px; */ 
     font-size: 40px;
     transition: .6s ease;
@@ -136,6 +148,9 @@
 .banners img:hover{
     cursor: pointer;
     transform: scale(1.02);
+}
+.inner_banner2 img:hover{
+    cursor:default;
 
 }
 .banners div{
@@ -303,20 +318,212 @@
      transform: scale(1.05);
   }
 
-  #bottom_div{
+  .bottom_div{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(6,1fr);
+    grid-template-rows: repeat(auto,1fr);
     gap: .6% 1%;
     width: 100%;
     padding: 1%;
     /* border: 1px solid red; */
+    margin-top: 2%;
   }
   /* #bottom_div>div{
     border: 1px solid red;
-  } */
-  #bottom_div img{
+  */
+  .bottom_div img{
     /* border: 1px solid red; */
     width: 100%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
+
+  #hot_deal_divs{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    gap: 1%;
+    /* border: 1px solid red; */
+    margin-left: 1%;
+    padding: 1%;
+    
+     
+  }
+  #hot_deal_divs div{
+    /* border: 1px solid black; */
+    display: flex;
+justify-content: center;
+padding: 5%;
+height: auto;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+/* overflow: hidden; */
+
+  }
+  
+  #hot_deal_divs img{
+    height: 99%;
+    width: 100%;
+    transition: .1s all ease-in-out;
+    margin: 1% 1% 1% 1%;
+    
+  }
+
+  #hot_deal_divs img:hover{
+    cursor: pointer;
+     transform: scale(1.05);
+     margin: 1%;
+     
+  }
+
+  /* #red_top {
+    min-height: 1px;
+    margin: 12px 18px;
+    padding: 0 24px;
+    position: relative;
+    overflow: visible;
+    margin-top: 5%;
+    height: auto;
+    border: 1px solid red;
+}
+ #red_list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    position: relative;
+    border: 1px solid rgb(40, 32, 32);
+   
+   
+}
+.reditems{
+    
+    background: #c5f8c0;
+    width: 16.5%;
+    margin-right: 16px;
+    
+    height: 35%;
+    background: #bce1fe;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 24px;
+}
+.reditems .offer_badge{
+    position: absolute;
+    color: #fff;
+    font-size: 98%;
+   font-weight: bolder;
+    width: 100%;
+    text-transform: uppercase;
+    background: url("https://www.jiomart.com/assets/version1657814599/smartweb/images/offer_bg.png") no-repeat top center;
+    height: auto;
+    background-size: 100%;
+    text-align: center;
+    padding: 8px 0 0;
+    height: 10%;
+
+}
+.offer_details>span{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 0;
+    margin: 0 auto 8px;
+}
+.offer_details>span img{
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+    margin-top: 14px;
+
+}
+.offer_details .offer_name{
+    font-size: 99%;
+    color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: bolder;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: -25%;
+} */
+
+#red_top{
+    /* border: 1px solid black; */
+    margin-bottom: 5%;
+} 
+#red_list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    gap: 2%;
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: auto;
+    height: 70%;
+}
+.reditems{
+text-align: center;
+border: dotted 1px rgb(246, 247, 247);
+border-radius: 6.8%;
+position: relative;
+width: 100%;
+background: #c5f8c0;
+margin-top: 2%;
+}
+.offer_badge b{
+    font-style: italic;
+}
+.reditems .offer_badge{
+    position: absolute;
+    color: #fff;
+    font-size: 100%;
+    font-family: 'Lato', sans-serif;
+     font-family: 'Varela Round', sans-serif;
+    font-weight: bolder;
+    width: 100%;
+    padding: 4% 0% 0% 0%;
+    text-transform: uppercase;
+    background: url("https://www.jiomart.com/assets/version1657814599/smartweb/images/offer_bg.png") no-repeat top center;
+    background-size: 100%;
+    text-align: center;
+    height: 14%;
+    margin-left: -50%;
+
+}
+.offer_details .offer_name{
+    font-size: 100%;
+    color: rgb(12, 11, 11);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: bolder;
+    justify-content: center;
+    /* overflow: hidden; */
+    margin-top: 2%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.offer_details>span img{
+    border-style: none;
+    width: 40%;
+    margin-top: 14%;
+    height: 50%;
+    /* border: 1px solid black; */
+   
+    
+
+    
+
+}
+.reditems:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+ }
+ .offer_details:hover{
+    transform: scale(1.05);
+ }
+ .offer_details{
+    transition: .3s ease-in-out;
+   
+ }
