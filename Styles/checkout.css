@@ -1,3 +1,12 @@
+#navbar{
+
+  background-color:#007bff;
+  position: relative;
+}
+#navbar>img{
+  margin-left: 50px;
+  padding: 10px;
+}
 #pay{
     display: flex;
     gap: 100px;
@@ -125,4 +134,19 @@
     font-size: 13px;
     color: red;
   }
-  
+  @media all and (min-width: 451px) and (max-width: 750px) {
+    #pay{
+      display: flex;
+      width: 50%;
+      height: 50%;
+      flex-direction: column;
+    }
+  }
+  @media all and (min-width: 100px) and (max-width: 450px){
+    #pay{
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      height: 30%;
+    }
+  }
