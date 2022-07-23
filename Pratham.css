@@ -274,7 +274,7 @@
      justify-content: center;
      gap: 1.5%;
      margin-bottom: 2%;
-     width: 95%;
+     /* width: 95%; */
      overflow:hidden;
      height: 45%;
     padding: .5%;
@@ -665,4 +665,66 @@ margin-top: 2%;
   .nxt-btn:hover img {
     opacity: 1;
   }
-  
+
+   @media all and (max-width:720px){
+    #categories_slider_box {
+      margin-top: -50%;
+    }
+
+    #categories_slider_box img{
+      /* display: none; */
+      width: 100%;
+    }
+    .inner_banner4{
+      height: 50%;
+     
+    }
+    .inner_banner2 img{
+      height: 14%;
+     
+    }
+    .inner_banner3 img{
+      height: 14%;
+     
+    }
+    /* .product{
+      display: none;
+    } */
+    #red_top{
+      width: 110%;
+      height: 80%;
+      margin-bottom: -40%;
+      margin-top: -10%;
+    }
+    .headings{
+      font-size: 14px;
+    }
+    #Womens_Fashion{
+      width: 100%;
+      height: 40%;
+    }
+    #mens_Fashion{
+      width: 100%;
+      height: 40%;
+      
+    }
+     #men_div2{
+      width: 100%;
+      height: 35%;
+    }
+    #Women_div2{
+      width: 100%;
+      height: 35%;
+    }
+    .bottom_sec{
+      height: 60%;
+      margin-top: 20%;
+      margin-bottom: -30%;
+    }
+    .reditems{
+      font-size: 75%;
+    }
+    .slideshow-container{
+      height: 20%;
+    }
+   }
