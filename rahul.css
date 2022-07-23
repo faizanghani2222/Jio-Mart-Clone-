@@ -49,7 +49,7 @@ body{
     border: 1px solid #ffffff;
     border-radius: 10px;
     background-color: #ffffff;
-    
+    width: 150px;
 }
 #productssortButtons button:hover{
  border: 0.5px solid rgb(76, 76, 211);
