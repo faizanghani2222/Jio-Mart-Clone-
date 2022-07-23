@@ -1,4 +1,7 @@
-console.log("hi")
+import mynav from "./navbar.js"
+import footerf from "./footer.js"
+document.querySelector("footer").innerHTML=footerf()
+document.querySelector("#mynav").innerHTML=mynav()
 document.querySelector("#paym").addEventListener("click", pay);
 function pay() {
   var cvv = document.querySelector("#password").value;

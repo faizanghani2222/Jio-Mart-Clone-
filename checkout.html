@@ -6,45 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JIOMART</title>
-    <link rel="stylesheet" href="../Styles/checkout.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
-    <div id="navbar">
-        <img src="https://www.jiomart.com/msassets/jiomart_logo_beta.svg" alt="">
-    </div>
+    <div id="mynav"></div>
     <div id="pay">
-        <div id="payment">
-            <h2>WALLET</h2>
-            <div id="png">
-                <input type="radio" name="Paytm" class="round">
-                <img src="https://www.jiomart.com/assets/pgicon/Paytm_lo.png" alt="">
-                <h3>Paytm</h3>
-            </div>
-            <div id="png1">
-                <input type="radio" name="" class="round">
-                <img src="https://www.jiomart.com/assets/pgicon/Phone_Pay_lo.png" alt="">
-                <h3>Phonepe /UPI</h3>
-            </div>
-            <div id="png2">
-                <input type="radio" name="" class="round">
-                <img src="https://www.jiomart.com/msassets/images/jio-money.png" alt="">
-                <h3>JioMoney</h3>
-            </div>
-            <div id="png3">
-                <input type="radio" name="" class="round">
-                <img src="https://www.jiomart.com/assets/pgicon/Mobikwik_lo.png" alt="">
-                <h3>Mobikwik</h3>
-            </div>
-            <div id="png4">
-                <input type="radio" name="" class="round">
-                <img src="https://www.jiomart.com/assets/pgicon/Free_Charge_lo.png" alt="">
-                <h3>Freecharge Pay Later/UPI/Wallet</h3>
-            </div>
-            <div id="png5">
-                <input type="radio" name="" class="round">
-                <img src="https://www.jiomart.com/images/cms/wysiwyg/cms/1631595196_payzapp.png" alt="">
-                <h3>PAYZAPP</h3>
+        <div id="cflex">
+            <h1></h1>
+            <div id="ccflex">
+                <div>
+                    <i class="fa-solid fa-cart-shopping" id="blu"></i>Your Cart
+                </div>
+                <hr id="dash">
+                <div>
+                    <i class="fa-solid fa-clipboard-check" id="blu"></i>Order Summary    
+                </div>
+                <hr id="dash">
+                <div>
+                    <i class="fa-solid fa-credit-card" id="blu"></i>Payment
+                </div>
             </div>
         </div>
         <div id="card">
@@ -116,7 +99,11 @@
             </div>
         </div>
     </div>
+    <footer></footer>
 </body>
 
 </html>
-<script src="./Scripts/checkout.js"></script>
+<script src="checkout.js" type="module"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://kit.fontawesome.com/38ad4e4760.js" crossorigin="anonymous"></script>
+<script src="faizan.js" type="module"></script>

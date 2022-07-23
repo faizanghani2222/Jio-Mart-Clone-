@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../logos/indiamart.png" type="image/png">
     <title>JIOMART</title>
-    <link rel="stylesheet" href="../Styles/thankyou.css">
+    <link rel="stylesheet" href="thankyou.css">
 </head>
 <body>
 
@@ -17,10 +17,16 @@
         <h2>Thank You!</h2>
 
         <p>JIOMART has recieved your Payments.</p>
-
-        <button><a href="index.html">Home</a></button>
     </div>
 
 </body>
 </html>
-
+<script>
+    setTimeout(() => {
+        window.location.href="index.html"
+    }, 3000);
+    localStorage.setItem("cartdata",null)
+    localStorage.setItem("counts",0)
+    localStorage.setItem("carttotal",0)
+    localStorage.setItem("onedata",null)
+</script>
