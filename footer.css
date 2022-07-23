@@ -7,13 +7,12 @@
     }
         
         footer {
-        padding: 52px 0 0;
+        /* padding: 52px 0 0; */
+        padding: 52px 0px;
         background: rgba(21,27,57,.08);
         width: 100%;
-     
-        
         font-size: 12px;
-        margin:  auto;
+        /* margin:  auto; */
     }
     .footer-container{
         margin: auto;
@@ -54,13 +53,13 @@
       
         
     }
-    li>a{
+    .footer-container li>a{
         text-decoration: none;
         color: #616162;
         transition: 0.5s;
         
     }
-    li>a:hover{
+    .footer-container li>a:hover{
       padding-left: 15px;
       color: #008ECC;
       font-weight: bold;
@@ -69,7 +68,7 @@
         text-decoration: none;
         color: #008ECC;
     }
-    li{
+    .footer-container li{
         margin-bottom: 10px;
         font-size: 16px;
         list-style-type: none;

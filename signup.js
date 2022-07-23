@@ -1,3 +1,5 @@
+import mynav from "./navbar.js"
+document.querySelector("#mynav").innerHTML=mynav()
 let userdata= JSON.parse(localStorage.getItem("user")) || []
     class user{
        
@@ -21,7 +23,7 @@ let userdata= JSON.parse(localStorage.getItem("user")) || []
                 alert("User registered succesfully")
                 document.querySelector("#signup-div").style.display="none";
                 document.querySelector("#login-div").style.display="block";
-                userdata.push(this)
+                userdata=this
                 localStorage.setItem("user",JSON.stringify(userdata))
                 // window.location.href="login.html"
                 // console.log(userdata)
@@ -35,19 +37,19 @@ let userdata= JSON.parse(localStorage.getItem("user")) || []
 
         }
         validateemail(email){
-            
-           let ans = userdata.filter((el)=>{
-                 return el.email===email
-           })
-           if(ans.length>0){
-            return false
-           }
-           else{
             return true
-           }
+        //    let ans = userdata.filter((el)=>{
+        //          return el.email===email
+        //    })
+        //    if(ans.length>0){
+        //     return false
+        //    }
+        //    else{
+        //    
+        //    }
         }
         validatepassword(password){
-            if(password.length>5){
+            if(password.length>0){
                 return true
             }
             else{
@@ -60,11 +62,11 @@ let userdata= JSON.parse(localStorage.getItem("user")) || []
         
     }
 
-    document.querySelector("form").addEventListener("submit",(e)=>{
+    document.querySelector("#signupform").addEventListener("submit",(e)=>{
         e.preventDefault()
-        let name = document.querySelector("#name").value
-        let email = document.querySelector("#email").value
-        let password = document.querySelector("#password").value
+        let name = document.querySelector("#sname").value
+        let email = document.querySelector("#semail").value
+        let password = document.querySelector("#spassword").value
         let s1=new user ()
          s1.signup(email,password,name)
         
@@ -81,17 +83,20 @@ let userdata= JSON.parse(localStorage.getItem("user")) || []
         }
 
         login(email1,password){
-            console.log(email1,"l")
-           let ans= userdata.filter((el)=>{
-               return el.email==email1
-            })
-            console.log(ans)
-            if(ans.length>0){
+          
+           if(email1==userdata.email && password==userdata.password){
             alert("Login succesfull")
-            // window.location.href=""
-            }
+            window.location.href="index.html"
+           }else if(email1==userdata.email && password!=userdata.password){
+            alert("Enter Correct Password")
+           }
+            
+            // if(ans.length>0){
+            // alert("Login succesfull")
+            // window.location.href="index.html"
+            // }
             else{
-                alert("This email does not registered with us kindly go to sign-up page")
+                alert("This email is not registered with us kindly go to sign-up page")
                 document.querySelector("#login-div").style.display="none";
                 document.querySelector("#signup-div").style.display="block";
 
@@ -103,10 +108,16 @@ let userdata= JSON.parse(localStorage.getItem("user")) || []
         e.preventDefault()
        
         let email1 = document.querySelector("#login-email").value
-        console.log(email1,"login")
+       
         let password = document.querySelector("#login-password").value
         let s2=new userlogin ()
          s2.login(email1,password)
         
         
     })
+
+    function signinp(){
+        document.querySelector("#signup-div").style.display="none";
+        document.querySelector("#login-div").style.display="block";
+    }
+    document.querySelector("#signin").addEventListener("click",signinp);

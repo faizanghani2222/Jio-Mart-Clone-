@@ -8,12 +8,8 @@
 body{
     background-color: #FFFFFF;
 }
-#navbar{
-    border: 1px solid blue;
-    height: 80px;
-}
         #privacybox{
-            margin: 20px 200px ;
+            margin: 150px 200px ;
             line-height: 1.5;
         }
 

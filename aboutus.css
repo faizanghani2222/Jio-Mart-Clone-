@@ -4,13 +4,10 @@
     box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
 }
-#navbar{
-    border: 1px solid #008ECC;
-    height: 80px;
-}
 #maincontent{
     width: 60%;
     margin: auto;
+    margin-top: 150px;
     color: #000;
 }
 .topline{
