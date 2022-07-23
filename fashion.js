@@ -1,4 +1,8 @@
 import {getData,append} from "./data.js" 
+import mynav from "./navbar.js"
+import footerf from "./footer.js"
+document.querySelector("footer").innerHTML=footerf()
+document.querySelector("#mynav").innerHTML=mynav()
    getData().then((res)=>{
    let data=res.fashion;
    append(data) 

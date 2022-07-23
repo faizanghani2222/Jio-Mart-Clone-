@@ -1,7 +1,9 @@
+import footerf from "./footer.js"
+document.querySelector("footer").innerHTML=footerf()
 var el = JSON.parse(localStorage.getItem("onedata"))
 
-
-
+let cartdata=JSON.parse(localStorage.getItem("cartdata"))||[];
+let counts=localStorage.getItem("counts")||0;
 
 let lastfun = (el)=>{
     let box =document.createElement("div")
@@ -17,10 +19,9 @@ let lastfun = (el)=>{
     
 
 
-    box2 =document.createElement("div")
+    let box2 =document.createElement("div")
     let p2 =document.createElement("p")
     let discount = Number(el.strikeprice-el.price);
-    console.log(discount)
     p2.innerText=`You Save: ₹ ${discount} Inclusive of all taxes`
     p2.setAttribute("class","discount")
 
@@ -45,3 +46,19 @@ let lastfun = (el)=>{
     document.querySelector("#detailspageappenddiv").append(box,box3,box2,box5)
     }
     lastfun(el)
+
+
+    document.querySelector("#pcart").addEventListener("click",()=>{
+     
+        if(el.qty==0){
+         el.qty=1
+         cartdata.push(el)
+         counts++
+         localStorage.setItem("counts",counts)
+         location.reload()
+        }else{
+         alert("Item already added")
+        }
+         localStorage.setItem("cartdata",JSON.stringify(cartdata))
+         localStorage.setItem("onedata",JSON.stringify(el))
+    })

@@ -1,4 +1,8 @@
-import {getData,append,fulldata} from "./data.js" 
+import {getData,append} from "./data.js" 
+import mynav from "./navbar.js"
+document.querySelector("#mynav").innerHTML=mynav()
+import footerf from "./footer.js"
+document.querySelector("footer").innerHTML=footerf()
    getData().then((res)=>{
     let data=res.groceries;
     append(data) 
@@ -119,5 +123,3 @@ import {getData,append,fulldata} from "./data.js"
     four.addEventListener("change",func4)
     five.addEventListener("change",func5)
 })
-
-fulldata()
