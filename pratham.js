@@ -1,3 +1,5 @@
+import footerf from "./footer.js"
+document.querySelector("footer").innerHTML=footerf()
 var slideIndex = 1;
 
 var myTimer;
