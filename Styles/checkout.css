@@ -135,6 +135,9 @@
     color: red;
   }
   @media all and (min-width: 451px) and (max-width: 750px) {
+    #payment{
+      display: none;
+    }
     #pay{
       display: flex;
       width: 50%;
@@ -143,6 +146,9 @@
     }
   }
   @media all and (min-width: 100px) and (max-width: 450px){
+    #payment{
+      display: none;
+    }
     #pay{
       display: flex;
       flex-direction: column;
