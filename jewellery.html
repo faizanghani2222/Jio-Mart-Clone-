@@ -38,24 +38,9 @@
             </ul>
             <div class="productsC">Categories</div>
             <ul>
-                <li><input type="checkbox"/><span>Groceries</span></li>
-                <li><input type="checkbox"/><span>Staple</span></li>
-                <li><input type="checkbox"/><span>Dairy</span></li>
-                <li><input type="checkbox"/><span>Beverages</span></li>
-                <li><input type="checkbox"/><span>Fruits</span></li>
-                <li><input type="checkbox"/><span>Bakery</span></li>
-                <!-- <li><input type="checkbox"/><span>Fashion</span></li>
-                <li><input type="checkbox"/><span>Mens</span></li>
-                <li><input type="checkbox"/><span>Women</span></li>
-                <li><input type="checkbox"/><span>Boys</span></li>
-                <li><input type="checkbox"/><span>Girls</span></li>
-                <li><input type="checkbox"/><span>Jewellery</span></li>
-                <li><input type="checkbox"/><span>Idol</span></li>
-                <li><input type="checkbox"/><span>Scoin</span></li>
-                <li><input type="checkbox"/><span>Gcoin</span></li>
-                <li><input type="checkbox"/><span>Kitchen-Ware</span></li>
-                <li><input type="checkbox"/><span>Essentaial</span></li>
-                <li><input type="checkbox"/><span>Non-Essentaial</span></li> -->
+                <li><input id="one" value="idol" type="checkbox"/><span>Idol</span></li>
+                <li><input id="two" value="scoin" type="checkbox"/><span>Silver Coin</span></li>
+                <li><input id="three" value="gcoin" type="checkbox"/><span>Gold Coin</span></li>
             </ul>
         </div>
     </div>
@@ -68,57 +53,18 @@
             <div id="productssortButtons">
                 <div>sort by :</div>
                 <button>Popularity</button>
-                <button>High to Low</button>
-                <button>Low to High</button>
+                <button id="htl">High to Low</button>
+                <button id="lth">Low to High</button>
                 <button>Discount</button>
-                <button>All products</button>
+                <button id="all">All products</button>
             </div>
         </div>
+        <div>All Product
         <div id="groceriesappend"></div>
+    </div>
     </div>
     </div>
 </body>
 </html>
-<script>
-
-let getData = async () => {
-        let res = await fetch("https://jiomart-server.herokuapp.com/api/Allproduct");
-      
-        let data = await res.json();
-      
-        console.log(data[0].Jewellery)
-        append(data[0].Jewellery)
-      }
-    
-      getData()
-    
-    
-      let append = (data)=>{
-        data.forEach((el)=>{
-        let box1 =document.createElement("div")
-        box1.setAttribute("class","box1main")
-    
-        let gimage =document.createElement("img")
-        gimage.src=el.image
-        gimage.setAttribute("class","proimg")
-    
-        let des =document.createElement("p")
-        des.innerText=el.name
-    
-        let sprice =document.createElement("p")
-        sprice.innerText=el.strikeprice;
-    
-        let price =document.createElement("p")
-        price.innerText=el.price;
-        
-        let btn = document.createElement("button")
-        btn.innerText="Add to Cart"
-    
-        box1.append(gimage,des,sprice,price,btn)
-        document.getElementById("groceriesappend").append(box1)
-    
-    
-        })
-      }
-
-</script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="jewellery.js" type="module" ></script>
