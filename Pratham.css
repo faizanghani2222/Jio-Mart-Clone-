@@ -21,20 +21,16 @@
     height: 45%;
 
 }
-/* @media all and (min-width: 451px) and (max-width:750px){
-    .slideshow-container {
-        width: 10%;
-        position: relative;
-        margin: auto;
-        height: 0%;
-    }
-     */
-    
-    
-/* } */
+ 
 .slideshow-container img {
     width: 100%;
     height: 100%;
+
+}
+.slideshow-container img:hover {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 
 }
 
@@ -252,6 +248,8 @@
  
 #Mens_Fashion{
     width: 100%;
+    height: 100%;
+    
    /* border: 1px solid red; */
    
  
@@ -281,6 +279,7 @@
      height: 45%;
     padding: .5%;
     margin: auto;
+  
  
  }
  #men_div2 img{
@@ -326,12 +325,30 @@
     width: 100%;
     padding: 1%;
     /* border: 1px solid red; */
-    margin-top: 2%;
+    margin-top: 1%;
   }
   /* #bottom_div>div{
     border: 1px solid red;
   */
   .bottom_div img{
+    /* border: 1px solid red; */
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  #bttm_div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    gap: .6% 1%;
+    width: 100%;
+    padding: 1%;
+    /* border: 1px solid red; */
+    margin-top: 16%;
+  }
+  /* #bottom_div>div{
+    border: 1px solid red;
+  */
+  #bttm_div img{
     /* border: 1px solid red; */
     width: 100%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -562,7 +579,7 @@ margin-top: 2%;
     width: 100%;
     height: 20%;
     margin-right: 40px;
-    /* padding: 0% 10% 0% 10%; */
+    /* padding: 10% 0% 10% 0%; */
     /* border: 1px solid red; */
     
     
@@ -584,16 +601,6 @@ margin-top: 2%;
     object-fit: cover;
   }
   
-  .discount-tag {
-    position: absolute;
-    background: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    color: #ff7d7d;
-    right: 10px;
-    top: 10px;
-    text-transform: capitalize;
-  }
   
   .card-btn {
     position: absolute;
@@ -617,7 +624,7 @@ margin-top: 2%;
   }
   
   .card-btn:hover {
-    background: #ff7d7d;
+    background: #958d8d;
     color: #fff;
   }
   
@@ -657,38 +664,5 @@ margin-top: 2%;
   .pre-btn:hover img,
   .nxt-btn:hover img {
     opacity: 1;
-  }
-  
-  .collection-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-  }
-  
-  .collection {
-    position: relative;
-  }
-  
-  .collection img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .collection p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-    text-transform: capitalize;
-  }
-  
-  .collection:nth-child(3) {
-    grid-column: span 2;
-    margin-bottom: 10px;
   }
   
