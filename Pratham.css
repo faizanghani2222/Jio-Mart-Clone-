@@ -1,0 +1,732 @@
+*{
+     margin: 0%;
+    padding: 0%;
+}
+.headings {
+    margin: 0;
+    margin-left: 3%;
+    font-weight: bolder;
+    padding: 8px 16px 16px 4px;
+    font-size: 200%;
+    color: rgb(28, 25, 25);
+    font-family: 'Lato', sans-serif;
+     font-family: 'Varela Round', sans-serif;
+     margin-bottom: -1.1%; 
+     margin-top: 1%; 
+}
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    margin-top:130px;
+    height: 45%;
+
+}
+ 
+.slideshow-container img {
+    width: 100%;
+    height: 100%;
+
+}
+.slideshow-container img:hover {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+}
+
+
+
+.mySlides {
+    margin: auto;
+    width: 99%;
+    display: none;
+    height:auto;
+     /* border: solid 1px black; */
+     
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    color: #6c6766;
+    /*font-weight:1px; */ 
+    font-size: 40px;
+    transition: .6s ease;
+    border-radius: 0 2px 2px 0;
+    background-color: rgba(249, 243, 243, 0.8);
+    opacity: 0.5;
+    
+}
+
+.next {
+     position: absolute;
+    right:0.6%;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.prev {
+    position: absolute;
+    left: 0.6%;
+    border-radius: 3px 3px 3px 3px;
+    
+}
+
+.prev:hover,
+.next:hover {
+    color: #f2f2f2;
+    background-color: rgba(156, 151, 151, 0.8)
+}
+.dot {
+    /* position: relative; */
+    border: 1px solid rgb(157, 155, 153);
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .7s ease;
+    /* margin-top: -00px */
+}
+
+.active,
+.dot:hover {
+    background-color: #717171
+}
+
+.banners{
+    width: 100%;
+    /* border: 1px solid lime; */
+    block-size: auto;
+    gap: 20px;
+    /* box-sizing: border-box; */
+    margin: auto;
+    margin-left: 10px;
+}
+.banners img{
+    transition: 0.5s all ease-in-out;
+    margin: auto;
+    width: 100%;
+    border: #222428;
+   
+}
+
+.inner_banner1>img{
+    width: 95%;
+    
+    
+    /* border: 1px solid rgb(232, 10, 10); */
+}
+.inner_banner2>img{
+    width: 95%;
+    /* border: 1px solid rgb(232, 10, 10); */
+    height: 180px;
+}
+.inner_banner3>img{
+    width: 95%;
+    /* border: 1px solid rgb(189, 2, 2); */
+    height:25%;
+}
+.inner_banner4>img{
+    
+    width: 95%;
+    /* border: 1px solid rgb(232, 10, 10); */
+    height: 40%;
+    margin-bottom: 5px;
+    /* margin-top: px; */
+}
+.banners img:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.inner_banner2 img:hover{
+    cursor:default;
+
+}
+.banners div{
+    width: 100%;
+    margin: auto;
+    margin-left: 3%;
+    
+}
+#categories_slider {
+    min-height: 1px;
+    margin: 12px 18px;
+    padding: 0 24px;
+    position: relative;
+    overflow: visible;
+     /* border: 1px solid red; */
+     display: flex;
+     box-sizing: border-box;
+     overflow: hidden;
+
+}
+
+#categories_slider_box img{
+    transition: 0.3s all ease-in-out;
+    padding: 5px;
+}
+#categories_slider_box img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#Womens_Fashion{
+   width: 100%;
+  /* border: 1px solid red; */
+  
+
+}
+#women_div1{
+    display: flex;
+   width: 99%;
+   /* border: 1px solid black; */
+   height: 70%;
+   justify-content: center;
+   gap: 1.5%;
+   margin: auto;
+   margin-bottom: 1%;
+   margin-top: 2%;
+   
+  
+}
+#women_div2{
+    display: flex;
+    width: 99%;
+    /* border: 1px solid black; */
+    justify-content: center;
+    gap: 1.5%;
+    margin-bottom: 2%;
+    width: 95%;
+    overflow:hidden;
+    height: 45%;
+   padding: .5%;
+   margin: auto;
+
+}
+#women_div2 img{
+    display: flex;
+   height: 100%;
+   width: 100%;
+   transition: 0.3s all ease-in-out;
+  
+}
+#women_div1 img{
+    height: 100%;
+    width: 100%;
+    transition: 0.3s all ease-in-out;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+ }
+
+ #women_div2>div{
+    /* border:1px solid #222428; */
+    overflow: hidden;
+    border-radius: 3%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;;
+ }
+ #women_div1>div{
+    /* border:1px solid #222428; */
+    overflow: hidden;
+    border-radius: 3%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;;
+ }
+ #women_div1 img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+ }
+ #women_div2 img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+ }
+
+ 
+#Mens_Fashion{
+    width: 100%;
+    height: 100%;
+    
+   /* border: 1px solid red; */
+   
+ 
+ }
+ #men_div1{
+     display: flex;
+    width: 99%;
+    /* border: 1px solid black; */
+    height: 70%;
+    justify-content: center;
+    gap: 1.5%;
+    margin: auto;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    
+   
+ }
+ #men_div2{
+     display: flex;
+     width: 99%;
+     /* border: 1px solid black; */
+     justify-content: center;
+     gap: 1.5%;
+     margin-bottom: 2%;
+     /* width: 95%; */
+     overflow:hidden;
+     height: 45%;
+    padding: .5%;
+    margin: auto;
+  
+ 
+ }
+ #men_div2 img{
+     display: flex;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s all ease-in-out;
+   
+ }
+ #men_div1 img{
+     height: 100%;
+     width: 100%;
+     transition: 0.3s all ease-in-out;
+     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+  }
+ 
+  #men_div2>div{
+     /* border:1px solid #222428; */
+     overflow: hidden;
+     border-radius: 3%;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;;
+  }
+  #men_div1>div{
+     /* border:1px solid #222428; */
+     overflow: hidden;
+     border-radius: 3%;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;;
+  }
+  #men_div1 img:hover{
+     cursor: pointer;
+     transform: scale(1.05);
+  }
+  #men_div2 img:hover{
+     cursor: pointer;
+     transform: scale(1.05);
+  }
+
+  .bottom_div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    gap: .6% 1%;
+    width: 100%;
+    padding: 1%;
+    /* border: 1px solid red; */
+    margin-top: 1%;
+  }
+  /* #bottom_div>div{
+    border: 1px solid red;
+  */
+  .bottom_div img{
+    /* border: 1px solid red; */
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  #bttm_div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    gap: .6% 1%;
+    width: 100%;
+    padding: 1%;
+    /* border: 1px solid red; */
+    margin-top: 16%;
+    margin-bottom:100px ;
+  }
+  /* #bottom_div>div{
+    border: 1px solid red;
+  */
+  #bttm_div img{
+    /* border: 1px solid red; */
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  #hot_deal_divs{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    gap: 1%;
+    /* border: 1px solid red; */
+    margin-left: 1%;
+    padding: 1%;
+    
+     
+  }
+  #hot_deal_divs div{
+    /* border: 1px solid black; */
+    display: flex;
+justify-content: center;
+padding: 5%;
+height: auto;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+/* overflow: hidden; */
+
+  }
+  
+  #hot_deal_divs img{
+    height: 99%;
+    width: 100%;
+    transition: .1s all ease-in-out;
+    margin: 1% 1% 1% 1%;
+    
+  }
+
+  #hot_deal_divs img:hover{
+    cursor: pointer;
+     transform: scale(1.05);
+     margin: 1%;
+     
+  }
+
+  /* #red_top {
+    min-height: 1px;
+    margin: 12px 18px;
+    padding: 0 24px;
+    position: relative;
+    overflow: visible;
+    margin-top: 5%;
+    height: auto;
+    border: 1px solid red;
+}
+ #red_list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    position: relative;
+    border: 1px solid rgb(40, 32, 32);
+   
+   
+}
+.reditems{
+    
+    background: #c5f8c0;
+    width: 16.5%;
+    margin-right: 16px;
+    
+    height: 35%;
+    background: #bce1fe;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 24px;
+}
+.reditems .offer_badge{
+    position: absolute;
+    color: #fff;
+    font-size: 98%;
+   font-weight: bolder;
+    width: 100%;
+    text-transform: uppercase;
+    background: url("https://www.jiomart.com/assets/version1657814599/smartweb/images/offer_bg.png") no-repeat top center;
+    height: auto;
+    background-size: 100%;
+    text-align: center;
+    padding: 8px 0 0;
+    height: 10%;
+
+}
+.offer_details>span{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 0;
+    margin: 0 auto 8px;
+}
+.offer_details>span img{
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+    margin-top: 14px;
+
+}
+.offer_details .offer_name{
+    font-size: 99%;
+    color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: bolder;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: -25%;
+} */
+
+#red_top{
+    /* border: 1px solid black; */
+    margin-bottom: 5%;
+} 
+#red_list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    gap: 2%;
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: auto;
+    height: 70%;
+}
+.reditems{
+text-align: center;
+border: dotted 1px rgb(246, 247, 247);
+border-radius: 6.8%;
+position: relative;
+width: 100%;
+background: #c5f8c0;
+margin-top: 2%;
+}
+.offer_badge b{
+    font-style: italic;
+}
+.reditems .offer_badge{
+    position: absolute;
+    color: #fff;
+    font-size: 100%;
+    font-family: 'Lato', sans-serif;
+     font-family: 'Varela Round', sans-serif;
+    font-weight: bolder;
+    width: 100%;
+    padding: 4% 0% 0% 0%;
+    text-transform: uppercase;
+    background: url("https://www.jiomart.com/assets/version1657814599/smartweb/images/offer_bg.png") no-repeat top center;
+    background-size: 100%;
+    text-align: center;
+    height: 14%;
+    margin-left: -50%;
+
+}
+.offer_details .offer_name{
+    font-size: 100%;
+    color: rgb(12, 11, 11);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: bolder;
+    justify-content: center;
+    /* overflow: hidden; */
+    margin-top: 2%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.offer_details>span img{
+    border-style: none;
+    width: 40%;
+    margin-top: 14%;
+    height: 50%;
+    /* border: 1px solid black; */
+   
+    
+
+    
+
+}
+.reditems:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+ }
+ .offer_details:hover{
+    transform: scale(1.05);
+ }
+ .offer_details{
+    transition: .3s ease-in-out;
+   
+ }
+
+
+
+
+ .product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .product-category {
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+  }
+  
+  .product-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  
+  }
+  
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .product-card {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 20%;
+    margin-right: 40px;
+    /* padding: 10% 0% 10% 0%; */
+    /* border: 1px solid red; */
+    
+    
+    
+  }
+  
+  .product-image {
+    position: relative;
+    width: 99%;
+    height: 35%;
+    /* overflow: hidden; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+  }
+  
+  .product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .card-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+  }
+  
+  .product-card:hover .card-btn {
+    opacity: 1;
+  }
+  
+  .card-btn:hover {
+    background: #958d8d;
+    color: #fff;
+  }
+  
+  /* .p */
+  
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, hsla(0, 59%, 36%, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+  }
+  
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+    font-size: 300%;
+  }
+  
+  .nxt-btn {
+    right: 0;
+    font-size: 300%;
+  }
+  
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+  }
+  
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+
+   @media all and (max-width:720px){
+    #categories_slider_box {
+      margin-top: -50%;
+    }
+
+    #categories_slider_box img{
+      /* display: none; */
+      width: 100%;
+    }
+    .inner_banner4{
+      height: 50%;
+     
+    }
+    .inner_banner2 img{
+      height: 14%;
+     
+    }
+    .inner_banner3 img{
+      height: 14%;
+     
+    }
+    /* .product{
+      display: none;
+    } */
+    #red_top{
+      width: 110%;
+      height: 80%;
+      margin-bottom: -40%;
+      margin-top: -10%;
+    }
+    .headings{
+      font-size: 14px;
+    }
+    #Womens_Fashion{
+      width: 100%;
+      height: 40%;
+    }
+    #mens_Fashion{
+      width: 100%;
+      height: 40%;
+      
+    }
+     #men_div2{
+      width: 100%;
+      height: 35%;
+    }
+    #Women_div2{
+      width: 100%;
+      height: 35%;
+    }
+    .bottom_sec{
+      height: 60%;
+      margin-top: 20%;
+      margin-bottom: -30%;
+    }
+    .reditems{
+      font-size: 75%;
+    }
+    .slideshow-container{
+      height: 20%;
+    }
+   }
