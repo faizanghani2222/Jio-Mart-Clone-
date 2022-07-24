@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+}
+/* #navbar{
+
+    background-color:#007bff;
+    position: relative;
+  }
+  #navbar>img{
+    margin-left: 50px;
+    padding: 10px;
+  }
+  #pay{
+      display: flex;
+      gap: 100px;
+  }
+  #payment{
+      
+      margin-left: 50px;
+      
+  }
+  .round{
+      border-radius: 50%;
+  } */
+  /* #payment>h3{
+      font-family: JioMedium;
+      font-size: 14px;
+      color: #000;
+      line-height: 32px;
+  }
+  #png{
+      display: flex;
+      gap: 10px;
+  }
+  #png1{
+      display: flex;
+      gap: 10px;
+      margin-top: 30px;
+  }
+  #png2{
+      display: flex;
+      gap: 10px;
+      margin-top: 30px;
+  }
+  #png3{
+      display: flex;
+      gap: 10px;
+      margin-top: 30px;
+  }
+  #png4{
+      display: flex;
+      gap: 10px;
+      margin-top: 30px;
+  }
+  #png5{
+      display: flex;
+      gap: 10px;
+      margin-top: 30px;
+  } */
+  #card{
+    width: 80%;
+    margin:auto;
+    /* margin-top: 130px; */
+    /* border: 1px solid; */
+  }
+  #cflex{
+    
+    width:90%;
+    margin:auto;
+    margin-top: 130px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #ccflex{
+    display: flex;
+    align-items: center;
+}
+#blu{
+    color: rgb(0, 142, 204);
+}
+#dash{
+    height:1px;
+    width:40px;
+    margin: 0px 10px;
+}
+  .container {
+      width: 60%;
+      margin:auto;
+      height: 500px;
+      /* border: 1px solid; */
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 40px;
+      justify-content: space-around;
+      
+    }
+    
+    .container h1 {
+      text-align: center;
+    }
+    
+    .first-row {
+      display: flex;
+    }
+    
+    .owner {
+      width: 100%;
+      margin-right: 40px;
+    }
+    
+    .input-field {
+      border: 2px solid #9999;
+    }
+    
+    .input-field input {
+      width: 70%;
+      border: none;
+      outline: none;
+      padding: 10px;
+    }
+    
+    .selection {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .selection select {
+      padding: 10px 20px;
+    }
+    
+    .container a {
+      background-color: rgb(0, 142, 204);
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 18px;
+      transition: 0.5s;
+      width: 50%;
+      margin-left: 150px;
+    }
+    
+    .container a:hover {
+      background-color: rgb(13, 92, 170);
+      cursor: pointer;
+    }
+    
+    .cards img {
+      width: 100px;
+      margin: 1px;
+      padding: 2px;
+      height: 50px;
+      width: 80%;
+      height: auto;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    .container p {
+      font-size: 13px;
+      color: red;
+    }
+    @media all and (max-width: 800px) {
+      #pay{
+        width: 90%;
+        margin:auto;
+      }
+      #card{
+        width: 100%;
+      }
+      .container{
+        width:100%
+      }
+    }
