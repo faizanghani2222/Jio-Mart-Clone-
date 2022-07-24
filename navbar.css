@@ -1,0 +1,332 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.slide{
+    height: 100%;
+    width: 280px;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 2;
+    background-color:rgb(0, 142, 204);
+    padding-top: 60px;
+    transform:translateX(-280px);
+}
+#sltop{
+    background-color: rgb(0, 142, 204);
+    color:white;
+    padding:20PX;
+}
+#sltop p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#sltop button{
+    border:1px solid white;
+    background-color: transparent;
+    color:white;
+    padding:7px 30px;
+    margin-right:7px
+}
+#sltop button:hover{
+    background-color:rgb(10, 114, 158)  ;
+   }
+
+i{
+    margin-right:10px;
+    font-size: 17px;
+}
+.slide ul>li{
+    list-style: none;
+}
+.slide ul li a{
+    color: white;
+    font-weight: 400;
+    padding: 10px 20px;
+    display: block;
+    text-transform:capitalize;
+    text-decoration:none;
+    transition: 0.2s ease-out;
+}
+.slide ul li a:hover{
+ background-color:rgb(10, 114, 158)  ;
+}
+.ss input{
+    display: none;
+    visibility:hidden;
+    -webkit-appearance: none;
+}
+.ss{
+    position: absolute;
+}
+.ss .toggle{
+    position: fixed;
+    height:40px;
+    width:30px;
+    top:15px;
+    left: 60px;
+    z-index: 3;
+    cursor:pointer;
+    border-radius: 2px;
+    background-color: transparent;
+    text-align: end;
+}
+.ss .toggle .common{
+    position:absolute;
+    height: 2px;
+    background-color: white;    
+    border-radius:50px;
+    transition: 0.3s ease;
+}
+.ss .toggle .top_line{
+    width: 25px;
+    top:30%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.ss .toggle .middle_line{
+    width: 25px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.ss .toggle .bottom_line{
+    width: 25px;
+    top:70%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.ss input:checked ~ .toggle .top_line{
+    left:2px;
+    top:14px;
+    width:25px;
+    transform:rotate(45deg);
+}
+.ss input:checked ~ .toggle .middle_line{
+    left:2px;
+    top:14px;
+    width:25px;
+    transform:rotate(-45deg);
+}
+.ss input:checked ~ .toggle .bottom_line{
+    opacity: 0;
+    transform:translateX(20px)
+}
+.ss input:checked ~ .slide{
+    transform:translateX(0);
+   position: fixed;
+}
+.ss input:checked ~ .toggle{
+    left:220px
+}
+.ss{
+    /* width: 1%; */
+    height: 100%;
+    /* display: none; */
+}
+#qcount{
+font-size: 13px;
+padding:3px;
+background: rgb(211, 9, 9);
+float:right;
+border-radius:50%
+}
+#none{
+    display:none
+}
+#navbar{
+    width:100%;
+    height:65px;
+    background-color: rgb(0, 142, 204);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:40px 40px;
+   
+}
+#navbar a{
+    color:white;
+    text-decoration:none;
+    font-size: 21px;
+    font-weight: 300px;
+}
+#navbar input{
+    font-size:16px;
+    padding:10px;
+    width:100%;
+    border:none;
+    border-radius: 5px;
+}
+#navbar form{
+    width:50%
+}
+#navbar input:focus{
+    outline:none;
+    }
+#navbar img{
+    height:35px
+}
+#seminav{
+    width:100%;
+    height:40px;
+    display: flex;
+    align-items:center;
+    background-color: rgb(163, 163, 168);
+   
+}
+#seminav ul{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    background-color: rgb(236, 236, 237);
+}
+#seminav ul li{
+    position:relative;
+    list-style:none;
+    display: inline-block;
+    
+}
+#seminav ul li a{
+display: block;
+padding:10px;
+text-decoration: none;
+font-size: 20px;
+color:black;
+font-size: 18px;
+}
+#seminav ul ul{
+    width:200px;
+    position:absolute;
+    top:40px;
+    display:none
+}
+#seminav ul li:hover>ul{
+    display: block;
+    
+}
+#seminav ul li:hover i{
+   transform: rotate(-180deg);
+    
+}
+#seminav ul ul li:hover{
+    background-color:rgb(193, 193, 202)
+}
+#seminav ul ul li{
+    width:100%;
+    float:none;
+    display:list-item
+}
+#seminav i{
+    margin-left:10px
+}
+
+#navbar{
+    position: fixed;
+    top:0px;
+    left:0;
+    z-index: 1;
+    /* margin-top:-10px; */
+    transition: 0.2s ease-in-out;
+}
+#seminav{
+    position: fixed;
+    top:70px;
+    left:0;
+    z-index: 1;
+    transition: 0.2s ease-in-out;
+}
+#btns{
+    width:20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-bottom:10px
+}
+@media all and (max-width:1200px){
+    #seminav{
+        display: none;
+    }
+    #navbar
+        {
+            height: 120px;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            /* optional */
+            -webkit-box-align: start;
+            -moz-box-align: start;
+            -ms-flex-align: start;
+            -webkit-align-items: flex-start;
+            align-items: flex-start;
+          }
+          #navbar .b {
+            -webkit-box-ordinal-group: 2;
+            -moz-box-ordinal-group: 2;
+            -ms-flex-order: 2;
+            -webkit-order: 2;
+            order: 2;
+            width:100%
+          }
+        
+          #navbar .a  {
+            -webkit-box-ordinal-group: 1;
+            -moz-box-ordinal-group: 1;
+            -ms-flex-order: 1;
+            -webkit-order: 1;
+            order: 1;
+            width:80%;
+            margin-bottom:10px;
+          }
+          #navbar .c{
+            width:25%;
+            position: fixed;
+            right:10px;
+            top:10px
+          }
+          #navbar img{
+            display: block;
+            margin:auto
+          } 
+}
+@media all and (max-width:600px){
+    #navbar .a {
+        width:60%;
+    }
+    #navbar .c {
+        width:40%;
+    }
+    #navbar a {
+        font-size: 14px;
+    }
+    .ss .toggle{
+        left:30px
+    }
+}
+@media all and (max-width:320px){
+    #navbar .a {
+        width:20%;
+    }
+    #navbar img{
+        width:100px;
+        margin: 0px 0px 0px 20px;
+    }
+    #navbar i{
+        display: none;
+    }
+    .ss .toggle{
+        left:30px;
+        width:10px
+    }
+}

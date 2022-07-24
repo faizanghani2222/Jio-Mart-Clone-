@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="faizan.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body class="smoke">
+    <div id="mynav"></div>
+    <div id="cart">
+        <div id="cflex">
+            <h1>My Cart</h1>
+            <div id="ccflex">
+                <div>
+                    <i class="fa-solid fa-cart-shopping" id="blu"></i>Your Cart
+                </div>
+                <hr id="dash">
+                <div>
+                    <i class="fa-solid fa-clipboard-check" id="gr"></i>Order Summary    
+                </div>
+                <hr id="dash">
+                <div>
+                    <i class="fa-solid fa-credit-card" id="gr"></i>Payment
+                </div>
+            </div>
+        </div>
+        <div id="cartbody">
+            <div id="leftd">
+                <div id="basket">
+                    <div class="flbtw">
+                        <h3>Shopping Baskets <span id="numitems"></span></h3>
+                        <h3>&#8377;<span id="itemt"></span></h3>
+                    </div>
+                    <div id="promo">
+                       <p><i class="fa-solid fa-tag"></i>Apply Coupon "MASAI" and get &#8377;100 off on order above &#8377;399 (Offer is applicable only on products sold by Reliance Retail . For specific exclusions & offer details refer T&C)</p>
+                    </div>
+                    <div id="cappend">
+                       
+                    </div>
+                </div>
+               </div>
+                <div id="pay">
+                    <div id="coupon">
+                        <h3>Apply Coupon</h3>
+                        <input id="coup" type="text" placeholder="Enter Coupon Code">
+                        <button id="couponbtn">Apply</button>
+                        <hr>
+                    </div>
+                    <div id="cpayment">
+                        <h3>Payment Details</h3>
+                        <div class="flbtw">
+                            <p id="gr">MRP Total</p>
+                            <p>&#8377;<span id="tprice">00</span></p>
+                        </div>
+                        <hr>
+                        <div class="flbtw">
+                            <p id="gr">Product Discount</p>
+                            <p>- &#8377;<span id="distotal">00</span></p>
+                        </div>
+                        <hr>
+                        <div class="flbtw">
+                            <p id="gr">Coupon Discount</p>
+                            <p>- &#8377;<span id="coupdis">00</span></p>
+                        </div>
+                        <hr>
+                        <div class="flbtw">
+                            <p >Total Amount</p>
+                            <p>&#8377;<span id="carttotal">00</span></p>
+                        </div>
+                    </div>
+                    <div id="cartbtn">
+                        <a id="placehref" href=""><button id="place">Place Order</button></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/38ad4e4760.js" crossorigin="anonymous"></script>
+<script src="faizan.js" type="module"></script>
+<script src="cart.js" type="module"></script>

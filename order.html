@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="faizan.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body class="smoke">
+    <div id="mynav"></div>
+    <div id="cart">
+        <div id="cflex">
+            <h1>Order Summary</h1>
+            <div id="ccflex">
+                <div>
+                    <i class="fa-solid fa-cart-shopping" id="blu"></i>Your Cart
+                </div>
+                <hr id="dash">
+                <div>
+                    <i class="fa-solid fa-clipboard-check" id="blu"></i>Order Summary    
+                </div>
+                <hr id="dash">
+                <div>
+                    <i class="fa-solid fa-credit-card" id="gr"></i>Payment
+                </div>
+            </div>
+        </div>
+        <div id="cartbody">
+            <div id="leftd">
+                <div id="address">
+                    <h3>Enter Delivery Address</h3>
+                    <form>
+                        <input type="text" placeholder="Address Line 1">
+                        <input type="text" placeholder="Address Line 2">
+                        <input type="text" placeholder="City">
+                        <input type="text" placeholder="Sate">
+                        <input type="text" placeholder="Pincode">
+                        <!-- <input type="submit" value="submit"> -->
+                    </form>
+                </div>
+                <div id="basket">
+                    <div class="flbtw">
+                        <h3>Shopping Baskets <span id="numitems"></span></h3>
+                        <h3>&#8377;<span id="itemt"></span></h3>
+                    </div>
+                    <div id="cappend">
+                    </div>
+                </div>
+            </div>
+            <div id="pay">
+                <div id="cpayment">
+                    <h3>Payment Details</h3>
+                    <div class="flbtw">
+                        <p id="gr">MRP Total</p>
+                        <p>&#8377;<span id="tprice">00</span></p>
+                    </div>
+                    <hr>
+                    <div class="flbtw">
+                        <p id="gr">Product Discount</p>
+                        <p>- &#8377;<span id="distotal">00</span></p>
+                    </div>
+                    <hr>
+                    <div class="flbtw">
+                        <p id="gr">Coupon Discount</p>
+                        <p>- &#8377;<span id="coupdis">00</span></p>
+                    </div>
+                    <hr>
+                    <div class="flbtw">
+                        <p >Total Amount</p>
+                        <p>&#8377;<span id="carttotal">00</span></p>
+                    </div>
+                </div>
+                <div id="cartbtn">
+                    <button id="place">Make Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/38ad4e4760.js" crossorigin="anonymous"></script>
+<script src="faizan.js" type="module"></script>
+<script src="order.js" type="module"></script>
