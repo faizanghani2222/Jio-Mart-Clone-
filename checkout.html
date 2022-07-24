@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIOMART</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <div id="mynav"></div>
+    <div id="pay">
+        <div id="cflex">
+            <h1></h1>
+            <div id="ccflex">
+                <div>
+                    <i class="fa-solid fa-cart-shopping" id="blu"></i>Your Cart
+                </div>
+                <hr id="dash">
+                <div>
+                    <i class="fa-solid fa-clipboard-check" id="blu"></i>Order Summary    
+                </div>
+                <hr id="dash">
+                <div>
+                    <i class="fa-solid fa-credit-card" id="blu"></i>Payment
+                </div>
+            </div>
+        </div>
+        <div id="card">
+            <div class="container">
+                <h1>Make Your Payment Now</h1>
+                <div class="first-row">
+                    <div class="owner">
+                        <h3>Card Holder's Name</h3>
+                        <div class="input-field">
+                            <input id="name" type="text" placeholder="Enter Your Name Here" />
+                        </div>
+                    </div>
+                    <div class="cvv">
+                        <h3>CVV</h3>
+                        <div class="input-field">
+                            <input id="password" type="password" placeholder="Enter  Number" />
+                        </div>
+                        <p id="in_pass"></p>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="card-number">
+                        <h3>Card Number</h3>
+                        <div class="input-field">
+                            <input id="card_number" type="text" placeholder="Enter Your Card Number Here" />
+                        </div>
+                        <p id="in_nm"></p>
+                    </div>
+                </div>
+                <div class="third-row">
+                    <h3>Valid Upto</h3>
+                    <div class="selection">
+                        <div class="date">
+                            <select name="months" id="months">
+                                <option value="Jan">Jan</option>
+                                <option value="Feb">Feb</option>
+                                <option value="Mar">Mar</option>
+                                <option value="Apr">Apr</option>
+                                <option value="May">May</option>
+                                <option value="Jun">Jun</option>
+                                <option value="Jul">Jul</option>
+                                <option value="Aug">Aug</option>
+                                <option value="Sep">Sep</option>
+                                <option value="Oct">Oct</option>
+                                <option value="Nov">Nov</option>
+                                <option value="Dec">Dec</option>
+                            </select>
+                            <select name="years" id="years">
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                            </select>
+                        </div>
+                        <div class="cards">
+                            <img src="https://utils.imimg.com/payments/pwim_files/pwim_modes_v5.png" />
+                        </div>
+                    </div>
+                    <p id="exp"></p>
+                </div>
+                <a id="paym">Pay Now</a>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+
+</html>
+<script src="check.js" type="module"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://kit.fontawesome.com/38ad4e4760.js" crossorigin="anonymous"></script>
+<script src="faizan.js" type="module"></script>
