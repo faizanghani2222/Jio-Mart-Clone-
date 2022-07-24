@@ -1,4 +1,4 @@
-.import mynav from "./navbar.js"
+import mynav from "./navbar.js"
 document.querySelector("#mynav").innerHTML=mynav()
 let userdata= JSON.parse(localStorage.getItem("user")) || []
     class user{
