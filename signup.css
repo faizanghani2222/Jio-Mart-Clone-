@@ -1,0 +1,106 @@
+/* /* <------------sign up ----------- */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+    /* background-color: #F6F6F7; */
+    transition: 0.5 ease;
+}
+
+body{
+    background-color: #F6F6F7; 
+}
+#box{
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+    width: 90%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+#signup-div{
+    display: block;
+    padding: 30px;
+    
+}
+#login-div{
+    
+    padding: 30px;
+    display: none;
+}
+#box>div{
+   
+    width: 45%;
+}
+#box form{
+    margin-top: 30px;
+}
+#box input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+   font-size: 16px;
+    cursor: pointer;
+}
+#box input[type="submit"]{
+    background-color: #008ECC;
+    color: white;
+    margin-top: 15px;
+
+}
+#box h4{
+    margin-top: 10px;
+    color: #666666;
+}
+#box>div>img{
+    border-radius: 15px 0px 0px 15px;
+}
+#signin{
+    color:#008ECC;
+    margin-left:10px;
+    cursor:pointer;
+}
+#signinp{
+    margin:20px 0px
+}
+@media all and (min-width:600px) and (max-width:1000px){
+    #box{
+    
+        margin: auto;
+        width: 70%;
+        margin-top: 50px;
+        display:flex;
+        flex-direction: column;
+       
+       
+    
+    }
+    #box>div{
+   
+        width: 400px
+    }
+}
+
+@media all and (min-width:51px) and (max-width:600px){
+    #box>div:first-child{
+        display: none;
+    }
+    #box>div{
+   
+        width: 400px
+    }
+}
+
+/* /* <------------sign up ----------- */
