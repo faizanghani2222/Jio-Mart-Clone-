@@ -32,6 +32,6 @@ HTML, CSS, JavaScript, JSON Server and heroku
 - The Landing Page is designed & functioned by Prathmesh S
 - Sign up page, login page & footer is designed & functioned by Nitesh M
 - Products section, Details page & API is designed by Rahul P
-- Cart section, Navbar, JavaScript parts,Profile page and order page is functioned by Faisan G
+- Cart section, Navbar, JavaScript parts,Profile page and order page is designed & functioned by Faizan G
 - Payment,Deliver  page is designed by Himanshu K.
 - Github & project meetings are managed by Team.
