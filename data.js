@@ -1,6 +1,6 @@
 
 let getData = async () => {
-    let res = await fetch("https://jiomart-server.herokuapp.com/api/Allproduct");
+    let res = await fetch("https://nice-plum-wasp-boot.cyclic.app/api/Allproduct");
     let data = await res.json();
    return data[0]
   }
